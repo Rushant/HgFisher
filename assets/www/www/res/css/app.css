@@ -1,0 +1,412 @@
+
+/*定义list信息没能加载时的提示信息样式*/
+.loadFailed{
+	color: #9D9D9D;
+	text-align: center;
+	font-size: 100%;
+}
+/*顶栏的高度*/
+.topToolbarCls{
+	letter-spacing:0.1em;
+}
+.segbtnCls{
+	width: 100%; 
+	height:40px;
+	font-size:22px;
+	letter-spacing:0.1em;
+}
+/*分页和刷新提示信息样式*/
+.x-list-paging .x-list-paging-msg{
+ color: #9D9D9D;
+}
+
+.x-list-pullrefresh {  
+  color: #9D9D9D;
+}
+/*三级页面上栏透明颜色样式*/
+.detailTopTbCls{
+}
+/*定义list信息样式*/
+.listCls .x-list-item-body  {
+	height: 70px;
+	padding: 5px 3px;
+}
+.listImageCls {
+	width: 80px;
+	height: 60px;
+	float: left;
+}
+.listInfoCls{
+	max-height: 60px;
+	margin-left: 84px;
+}
+.listTitleCls{	
+	font-size: 18px;
+	max-height: 60px;
+    overflow: hidden;  
+}
+.listAuthorCls{
+	margin-top:5px;
+	margin-left:0px;
+	font-size:15px;
+    color:#9D9D9D;
+}
+.listDateCls{
+	 float:right;	
+}
+/*无图片列表的样式设计*/
+.noImgListCls .x-list-item-body  {
+	height:60px;
+    padding:10px 5px;
+}
+.noImgListTitle{	
+	font-size:19px; 
+	white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;
+}
+.noImgListDate{	
+	margin-left:0px;
+	margin-top:5px;
+	font-size:15px;
+    color:#9D9D9D; 
+}
+.noImgListPublisher{
+	float:right;
+}
+.labelCls{
+	font-size:17px;
+}
+.answerImgCls{
+	text-align:left;
+	font-size:17px;
+}
+/*定义正文背景色为白色*/
+.detailViewCls{
+	 background-color: #FFFFFF;
+}
+/*定义正文标题样式*/
+.detailViewCls .detailTitleCls{
+	font-weight: bold;
+	text-align: center;
+	font-size: 150%;
+	color: #000000;
+}
+/*定义正文图片样式*/
+.detailViewCls .detailImgCls {	
+	max-width: 300px;
+	max-height: 400px;
+}
+
+/*定义正文时间样式*/
+.detailViewCls .detailDateCls{
+	color: #9D9D9D;
+	text-align: center;
+	font-size: 100%;
+}
+/*定义正文视频图标样式*/
+.detailViewCls .detailVideoCls{	
+	background: url(../icon/videoimg.png);
+	text-align: center;
+	width: 80px;
+	height: 60px;
+}
+/*定义正文内容样式*/
+.detailViewCls .detailContentCls{
+	color: #4C4C4C;
+	font-size: 130%;
+	text-align: left;
+	line-height: 150%;
+	margin-left:-8px;
+}
+/*定义正文内容完结标志样式*/
+.detailViewCls .detailOverCls{
+	background: #D4D4D4;
+	margin-left:70%;
+	width:30%;
+	color: #9D9D9D;
+	font-size: 130%;
+	text-align: right;
+}
+/*定义正文内容加载失败样式*/
+.detailViewCls .detailContentFailedCls{
+	color: #9D9D9D;
+	font-size: 130%;
+	text-align: center;
+}
+.detailViewCls .detailImg{
+	max-width: 300px;
+	max-height: 400px;
+}
+/*定义正文小字体*/
+/*定义正文背景色为白色*/
+.detailView_SmallCls{
+	 background-color: #FFFFFF;
+}
+/*定义正文标题样式*/
+.detailView_SmallCls .detailTitleCls{
+	font-weight: bold;
+	text-align: center;
+	font-size: 140%;
+	color: #000000;
+}
+/*定义正文图片样式*/
+.detailView_SmallCls .detailImgCls {	
+	max-width: 300px;
+	max-height: 400px;
+}
+
+/*定义正文时间样式*/
+.detailView_SmallCls .detailDateCls{
+	color: #9D9D9D;
+	text-align: center;
+	font-size: 90%;
+}
+/*定义正文视频图标样式*/
+.detailView_SmallCls .detailVideoCls{	
+	background: url(../icon/videoimg.png);
+	text-align: center;
+	width: 80px;
+	height: 60px;
+}
+/*定义正文内容样式*/
+.detailView_SmallCls .detailContentCls{
+	color: #4C4C4C;
+	font-size: 120%;
+	text-align: left;
+	line-height: 150%;
+	margin-left:-8px;
+}
+/*定义正文内容完结标志样式*/
+.detailView_SmallCls .detailOverCls{
+	background: #D4D4D4;
+	margin-left:70%;
+	width:30%;
+	color: #9D9D9D;
+	font-size: 120%;
+	text-align: right;
+}
+/*定义正文内容加载失败样式*/
+.detailView_SmallCls .detailContentFailedCls{
+	color: #9D9D9D;
+	font-size: 120%;
+	text-align: center;
+}
+.detailView_SmallCls .detailImg{
+	max-width: 300px;
+	max-height: 400px;
+}
+
+/*定义正文大字体*/
+/*定义正文背景色为白色*/
+.detailView_LargeCls{
+	 background-color: #FFFFFF;
+}
+/*定义正文标题样式*/
+.detailView_LargeCls .detailTitleCls{
+	font-weight: bold;
+	text-align: center;
+	font-size: 160%;
+	color: #000000;
+}
+/*定义正文图片样式*/
+.detailView_LargeCls .detailImgCls {	
+	max-width: 300px;
+	max-height: 400px;
+}
+
+/*定义正文时间样式*/
+.detailView_LargeCls .detailDateCls{
+	color: #9D9D9D;
+	text-align: center;
+	font-size: 110%;
+}
+/*定义正文视频图标样式*/
+.detailView_LargeCls .detailVideoCls{	
+	background: url(../icon/videoimg.png);
+	text-align: center;
+	width: 80px;
+	height: 60px;
+}
+/*定义正文内容样式*/
+.detailView_LargeCls .detailContentCls{
+	color: #4C4C4C;
+	font-size: 140%;
+	text-align: left;
+	line-height: 150%;
+	margin-left:-8px;
+}
+/*定义正文内容完结标志样式*/
+.detailView_LargeCls .detailOverCls{
+	background: #D4D4D4;
+	margin-left:70%;
+	width:30%;
+	color: #9D9D9D;
+	font-size: 140%;
+	text-align: right;
+}
+/*定义正文内容加载失败样式*/
+.detailView_LargeCls .detailContentFailedCls{
+	color: #9D9D9D;
+	font-size: 140%;
+	text-align: center;
+}
+.detailView_LargeCls .detailImg{
+	max-width: 300px;
+	max-height: 400px;
+}
+
+/*定义天气信息样式*/
+.weatherIcon1{
+}
+.weatherInfo{
+	float:left;
+	font-size: 100%;
+	padding:5px;
+}
+.weatherForecast{
+	font-size: 80%;
+}
+.weatherDetail{
+	font-size: 80%;
+}
+.weather1{
+	float:left;
+	padding:5px 10px;
+}
+.weather2{
+	float:left;
+	padding:5px 10px;
+}
+.weatherDate{
+	color: #9D9D9D;
+	font-size: 80%;
+}
+/*定义segmentbutton的样式*/
+.sgToolbarCls {
+	background-color: #CCC;
+	background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, white),
+		color-stop(2%, #DEDEDE), color-stop(100%, #BABABA) );	
+	border-color: #4D4D4D;	
+}
+.homePageCls{
+	/*background-image:url(../img/bg.jpg);FFF68F*/
+	/*background-image:url(../img/bg.jpg);*/
+	 background-color: #FFFFFF;
+}
+
+/*广告图片样式*/
+.adCls{
+}
+
+.adImgCls{
+	/*border: 1px solid red;
+	max-width:320px;
+	max-height:192px;*/
+}
+/*专家列表样式*/
+.expertCls .x-list-item-body {
+	height:122px;
+    margin:0px;
+    padding:5px;  
+}
+.expertCls .x-list-disclosure {
+	-webkit-mask: 0 0 url(../icon/phone.png);
+	 position: absolute;
+	 width: 32px;
+ 	 height: 32px;
+	 top: 0.48em;
+	 right: 0.48em;
+}
+.expertListImage{
+	width:80px; 
+	height:112px;
+	float:left;
+}
+.expertDetailImage{
+	max-width:150px; 
+	max-height:200px;	
+}
+.expertListDescription{
+	max-height:112px;
+	font-size:15px;	
+	margin-top:2px;	
+	margin-left:85px;	 	
+}
+.expert_description{
+	max-height:40px;
+	line-height:20px; 
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+}
+/*发布信息列表样式*/
+.publishCls .x-list-item-body {
+  	height:60px;
+    padding:10px 5px; 
+}
+.publishTitle{
+	font-size:20px; 
+	white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;
+}
+.publishTime{
+	margin-top:5px;
+	margin-left:0px;
+	font-size:15px;
+    color:#9D9D9D;
+}
+.comment{
+    float:right;	 
+}
+
+.questionContainerCls{
+	max-height: 60px;
+	margin-left: 84px;
+}
+.questionTitleCls{
+	font-size: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.questionDateCls{
+	font-size:16px;
+    color:#9D9D9D;
+	overflow: hidden;
+}
+
+/*订购模块样式*/
+.publish {
+	background: #F7F7F7;
+}
+
+.publish .x-form-label {
+	padding: 5px;
+}
+
+.publish .x-form-fieldset {
+	margin: 0 0 .7em 0;
+}
+
+.publish .x-form-label {
+	text-align: center;
+}
+
+.publish .x-form-field {
+	height: 20px;
+	margin: 0;
+	font-size: .8em;
+}
+
+.publish .x-form-field-wrap .x-form-trigger {
+	height: 19px;
+}
+
+.publish .box {
+	border: 1px solid #F7F7F7;
+	background-color: #F7F7F7;
+	width: 100%;
+	height: 200px;
+}

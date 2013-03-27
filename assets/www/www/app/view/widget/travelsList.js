@@ -1,0 +1,40 @@
+Ext.define('tuanFeng.view.widget.travelsList',{
+	extend:'Ext.List',
+	xtype:'w_travelsList',
+	
+	config:{
+		scrollable: {
+		    direction: 'vertical',
+		    directionLock: true
+		},
+		cls:'listCls',
+		itemTpl:    '<img  class="listImageCls" onerror=\"this.src=\'res/icon/default.png\'\"' +
+		'src="{imageurl1}"/>' +
+   		'<div class="listInfoCls"><div class="listTitleCls"><b>{title}</b></div>'
+		+'<div class="listAuthorCls">作者：{publisher}<span class="listDateCls">{datetime}</span></div></div>',
+		loadingText: Global.loadingText,
+		emptyText:'<br><div class="loadFailed">信息加载失败，下滑刷新重试</div>',
+		plugins: [
+	  	            {
+	  	            	xclass: 'Ext.plugin.PullRefresh',
+	  	        　　　　　　　　  pullRefreshText: '下滑更新数据',
+	  	                lastUpdatedText:'最近更新：',
+	      	        　　　　　　releaseRefreshText: '松开开始更新',
+	      	        　　　　　　loadingText: '正在刷新...',
+			      	      refreshFn: function (loaded, arguments) {
+			                  loaded.getList().getStore().loadPage(1, {
+			                     callback: function (record, operation, success) {
+			                         Ext.Viewport.unmask();
+			                     }, scope: this
+			                 });
+			               }
+	  	            },
+	  	            {
+	  	            	xclass: 'Ext.plugin.ListPaging',
+	  	            	noMoreRecordsText:'信息已加载完毕',
+	  	            	loadMoreText:'上滑加载更多...',
+	  	            	autoPaging: true
+	  	            }
+	  	        ]
+	}
+});
