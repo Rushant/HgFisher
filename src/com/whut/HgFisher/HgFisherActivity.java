@@ -57,7 +57,7 @@ public class HgFisherActivity extends DroidGap {
        
         if(imsi!=null)
         {  
-			 if(imsi.startsWith("46003"))
+			 if(!imsi.startsWith("46003"))
 			 {  
 			        super.setIntegerProperty("splashscreen", R.drawable.splash);			        
 			        super.loadUrl("file:///android_asset/www/www/index.html");	

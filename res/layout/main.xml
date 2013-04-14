@@ -9,5 +9,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/text"
         android:text="@string/hello" />
+    
+    <VideoView 
+        android:id="@+id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
 
 </LinearLayout>

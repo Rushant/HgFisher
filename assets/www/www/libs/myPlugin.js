@@ -16,9 +16,6 @@ function setController(controllerPara) {
 	controller=controllerPara;
 } 
 
-function setVideoName(videoNamePara){
-	videoName = videoNamePara;
-}
 
 function itemTaped(id) {  
 	Ext.Ajax.request({  
