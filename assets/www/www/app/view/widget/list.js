@@ -8,6 +8,9 @@ Ext.define('tuanFeng.view.widget.list',{
 		    directionLock: true
 		},
 		cls:'listCls', 
+		//pressedCls:'listPressedCls',
+		//disableSelection :true,
+		//selectedCls :'listPressedCls',
 		itemTpl:   '<img  class="listImageCls" onerror=\"this.src=\'res/icon/default.png\'\"' +
 					'src="{imageurl1}"/>' +
 			   		'<div class="listInfoCls"><div class="listTitleCls"><b>{title}</b></div></div>',

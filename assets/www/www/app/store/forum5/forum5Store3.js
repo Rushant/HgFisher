@@ -1,4 +1,4 @@
-Ext.define('tuanFeng.store.forum7.forum7Store3', {
+Ext.define('tuanFeng.store.forum5.forum5Store3', {
     extend:'Ext.data.Store',
     //currentPage:1,
     

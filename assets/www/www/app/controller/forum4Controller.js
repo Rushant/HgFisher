@@ -275,6 +275,7 @@ Ext.define('tuanFeng.controller.forum4Controller',{
 				return;	 								
 			}
 			else {
+				//make sure floating views display on the top;
 				Ext.Msg.defaultAllowedConfig.zIndex = 1000;
 				Ext.Msg.confirm('提示','确定要发布吗？',
 

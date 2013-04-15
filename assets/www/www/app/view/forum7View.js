@@ -23,8 +23,7 @@ Ext.define('tuanFeng.view.forum7View',{
         				            defaults: { flex: 1 },
         		                    items: [//itemId不能为0
         		                            { itemId :1, text: '鱼类',pressed: true},
-        			                        { itemId :2,text: '其他'},
-        			                        { itemId :3,text: '价格行情'}
+        			                        { itemId :2,text: '其他'}
         		                    ]}
         	             ]}
         		]},
@@ -37,11 +36,6 @@ Ext.define('tuanFeng.view.forum7View',{
     				itemId:'2',
     				xtype:'w_list',
     				store:'forum7Store2'			
-    			},
-    			{
-    				itemId:'3',
-    				xtype:'w_list',
-    				store:'forum7Store3'			
     			}]
 	},
 	

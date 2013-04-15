@@ -40,12 +40,12 @@
 	max-height: 60px;
 	margin-left: 84px;
 }
-.listTitleCls{	
+.listCls .listTitleCls{	
 	font-size: 18px;
 	max-height: 60px;
     overflow: hidden;  
 }
-.listAuthorCls{
+.listCls .listAuthorCls{
 	margin-top:5px;
 	margin-left:0px;
 	font-size:15px;
@@ -53,6 +53,23 @@
 }
 .listDateCls{
 	 float:right;	
+}
+/*定义list点击后信息样式*/
+.listPressedCls  .x-list-paging-msg{
+	height: 70px;
+	padding: 5px 3px;
+}
+.listPressedCls .listTitleCls{	
+	color:#9D9D9D;
+	font-size: 18px;
+	max-height: 60px;
+    overflow: hidden;  
+}
+.listPressedCls .listAuthorCls{
+	margin-top:5px;
+	margin-left:0px;
+	font-size:15px;
+    color:#9D9D9D;
 }
 /*无图片列表的样式设计*/
 .noImgListCls .x-list-item-body  {

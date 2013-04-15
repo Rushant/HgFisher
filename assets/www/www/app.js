@@ -21,9 +21,9 @@ Ext.application({
             'forum2.forum2Store1','forum2.forum2Store2','forum2.forum2Store3',
             'forum3.forum3Store1','forum3.forum3Store2','forum3.forum3Store3',
             'forum4.forum4Store1','forum4.forum4Store2','forum4.forum4Store3',
-            'forum5.forum5Store1','forum5.forum5Store2',
+            'forum5.forum5Store1','forum5.forum5Store2','forum5.forum5Store3',
             'forum6.forum6Store1','forum6.forum6Store2',
-            'forum7.forum7Store1','forum7.forum7Store2','forum7.forum7Store3',
+            'forum7.forum7Store1','forum7.forum7Store2',
             'forum8.forum8Store1','forum8.forum8Store2','forum8.forum8Store3',
             'forum9.forum9Store1'
             ],

@@ -45,7 +45,7 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 		if(!this.forum5View)
 			this.forum5View = Ext.create('tuanFeng.view.forum5View');
 		//处理信息列表与交互模块的差异
-		if(this.forum5View.getActiveItem().getItemId() != 3 && !this.forum5View.getActiveItem().getStore().isLoaded())
+		if(this.forum5View.getActiveItem().getItemId() != 4 && !this.forum5View.getActiveItem().getStore().isLoaded())
 			this.forum5View.getActiveItem().getStore().loadPage(1);
 		//this.getRef_detailView().setFatherView(this.forum5View);
 		Ext.Viewport.setActiveItem(this.forum5View);
@@ -127,7 +127,7 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 	
 	getPickedCaro5:function(container, newItem, oldItem,opts){
 		this.getRef_forum5Segmentbutton().setPressedButtons(newItem.getItemId());
-		if(newItem.getItemId() != 3 && !newItem.getStore().isLoaded())
+		if(newItem.getItemId() != 4 && !newItem.getStore().isLoaded())
 			newItem.getStore().loadPage(1);
 		this.getRef_forum5().setActiveItemTitle(this.getRef_forum5Segmentbutton().getAt(newItem.getItemId()-1).getText());
 	},
