@@ -18,20 +18,20 @@ Ext.define('tuanFeng.view.forum5View',{
         		            ui:'gray',			            
         		            items:[{
         		                    xtype: 'segmentedbutton',	
-        		                    cls:'segbtnCls',
+        		                    cls:'segbtn1Cls',
         		                    allowDepress:false,
         				            defaults: { flex: 1 },
         		                    items: [//itemId不能为0
-        		                            { itemId :1, text: '求购',pressed: true},
-        			                        { itemId :2,text: '供应'},
-        			                        { itemId :3,text: '价格行情'},
+        		                            { itemId :1, text: '市场动态',pressed: true},
+        			                        { itemId :2,text: '供应信息'},
+        			                        { itemId :3,text: '求购信息'},
         			                        { itemId :4,text: '我要发布'}
         		                    ]}
         	             ]}
         		]},
         		{
 	        		itemId:'1',
-					xtype:'w_publishList',
+					xtype:'w_list',
 					store:'forum5Store1'
 				},
 				{
@@ -41,7 +41,7 @@ Ext.define('tuanFeng.view.forum5View',{
 				},
 				{
 					itemId:'3',
-					xtype:'w_list',
+					xtype:'w_publishList',
 					store:'forum5Store3'		
 				},
 				{

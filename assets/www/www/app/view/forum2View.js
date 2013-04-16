@@ -24,7 +24,7 @@ Ext.define('tuanFeng.view.forum2View',{
         		                    items: [//itemId不能为0
         		                            { itemId :1, text: '养殖技术',pressed: true},
         			                        { itemId :2,text: '加工贮运'},
-        			                        { itemId :3,text: '科技讲座'}
+        			                        { itemId :3,text: '鱼病防治'}
         		                    ]}
         	             ]}
         		]},

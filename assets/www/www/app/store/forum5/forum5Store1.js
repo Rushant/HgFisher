@@ -3,11 +3,11 @@ Ext.define('tuanFeng.store.forum5.forum5Store1', {
     //currentPage:1,
     
     config:{
-    model: 'tuanFeng.model.publishModel',
-    pageSize:Global.infoPageSize,    
+    model: 'tuanFeng.model.newsModel',
+    pageSize:Global.newsPageSize,    
     proxy: {
         type: 'jsonp',
-        url : Global.Website + '/Server/getPublishTitle.jsp?category=1',
+        url : Global.Website + '/Server/getInfoTitle.jsp?categoryid=571',
         reader: {
             type: 'json',
             successProperty: 'success'

@@ -1,8 +1,8 @@
 var Global = {
 	Author:'Rushant',
-	//Website : 'http://59.69.65.153:8080/HgFisherServer',
+	Website : 'http://59.69.65.153:8080/HgFisherServer',
 	//http://zhny.0713.me:8080/WiseAgServer
-	Website : 'http://zhny.0713.me:8080/HgFisherServer',
+	//Website : 'http://zhny.0713.me:8080/HgFisherServer',
 	//AdImgUrl:'http://59.69.65.153:8080/HgFisherServer/upload/adImg',
 	loadingText:'加载中...',
 	weatherImgUrl:'http://m.weather.com.cn/img/d',
@@ -19,11 +19,11 @@ Ext.application({
     stores:['advertiseStore',
             'forum1.forum1Store1','forum1.forum1Store2','forum1.forum1Store3',
             'forum2.forum2Store1','forum2.forum2Store2','forum2.forum2Store3',
-            'forum3.forum3Store1','forum3.forum3Store2','forum3.forum3Store3',
+            'forum3.forum3Store1','forum3.forum3Store2','forum3.forum3Store3','forum3.forum3Store4',
             'forum4.forum4Store1','forum4.forum4Store2','forum4.forum4Store3',
             'forum5.forum5Store1','forum5.forum5Store2','forum5.forum5Store3',
-            'forum6.forum6Store1','forum6.forum6Store2',
-            'forum7.forum7Store1','forum7.forum7Store2',
+            'forum6.forum6Store1','forum6.forum6Store2','forum6.forum6Store3',
+            'forum7.forum7Store1','forum7.forum7Store2','forum7.forum7Store3',
             'forum8.forum8Store1','forum8.forum8Store2','forum8.forum8Store3',
             'forum9.forum9Store1'
             ],

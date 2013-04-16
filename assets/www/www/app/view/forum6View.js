@@ -10,7 +10,7 @@ Ext.define('tuanFeng.view.forum6View',{
         		items:[
         		       {
         		    	   xtype:'w_toolbar',
-        		    	   title:'名企名人'
+        		    	   title:'行业风采'
         		       },
         		       {
         		    	   xtype : 'toolbar',
@@ -22,8 +22,9 @@ Ext.define('tuanFeng.view.forum6View',{
         		                    allowDepress:false,
         				            defaults: { flex: 1 },
         		                    items: [//itemId不能为0
-        		                            { itemId :1, text: '水产名人',pressed: true},
-        			                        { itemId :2,text: '企业之光'}
+        		                            { itemId :1, text: '水产人物',pressed: true},
+        			                        { itemId :2,text: '企业之光'},
+        			                        { itemId :3,text: '行业先锋'}
         		                    ]}
         	             ]}
         		]},
@@ -36,6 +37,11 @@ Ext.define('tuanFeng.view.forum6View',{
     				itemId:'2',
     				xtype:'w_list',
     				store:'forum6Store2'			
+    			},
+    			{
+    				itemId:'3',
+    				xtype:'w_list',
+    				store:'forum6Store3'			
     			}]
 	},
 	
