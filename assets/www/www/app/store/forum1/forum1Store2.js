@@ -7,7 +7,7 @@ Ext.define('tuanFeng.store.forum1.forum1Store2', {
     pageSize:Global.newsPageSize,    
     proxy: {
         type: 'jsonp',
-        url : Global.Website + '/Server/getInfoTitle.jsp?categoryid=502',
+        url : Global.Website + '/Server/getInfoTitle.jsp?categoryid=512',
         reader: {
             type: 'json',
             successProperty: 'success'

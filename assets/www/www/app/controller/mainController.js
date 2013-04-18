@@ -115,10 +115,12 @@ Ext.define('tuanFeng.controller.mainController',{
     	    success: function(result) {
     	        var weather = result;
     	        if (weather) {
-    	        		Global.weather1Short = '<div class="weatherInfo">'        		
+    	        		Global.weather1Short = '<span class="weatherInfo">'        		
         	    		+'<div>'+weather.weatherinfo.week +'</div>'
         	    		+'<div>'+weather.weatherinfo.weather1 +'</div>'
-        	    	   +'<div>'+weather.weatherinfo.temp1+'</div></div>';                   
+        	    	   +'<div>'+weather.weatherinfo.temp1+'</div></span>'
+        	    	   +'<span class="adWords"><div>打造百亿水产，智慧水产</div>'
+    	        		+'<div>实现种苗名市，水产强市</div></span>'; 
 
     	        		Global.weather1Detail ='<div class="weather1"><div>今天:</div><img src='+Global.weatherImgUrl+weather.weatherinfo.img1+'.gif>'        		
     	        		+'<div class="weatherForecast">'+weather.weatherinfo.weather1
@@ -138,7 +140,9 @@ Ext.define('tuanFeng.controller.mainController',{
     	        me.getRef_adImg().setHtml(Global.weather1Short);
     	    },
     	    failure:function(){
-    	    	me.getRef_adImg().setHtml('<div class="weatherInfo">获取天气失败！</div>');
+    	    	me.getRef_adImg().setHtml('<span class="weatherInfo">获取天气失败！</span>'
+    	    			 +'<span class="adWords"><div>打造百亿水产，智慧水产</div>'
+     	        		+'<div>实现种苗名市，水产强市</div></span>' );
     	    }
     	});
     },

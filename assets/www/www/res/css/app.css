@@ -280,10 +280,18 @@
 /*定义天气信息样式*/
 .weatherIcon1{
 }
+.adWords{
+	text-align:right;
+	font-family:"楷体",'宋体',Arial;
+	font-size:110%;
+	font-weight:bold;
+	text-shadow:0 0 0.2em #91b2dd,
+					0 0 0.2em #91b2dd;
+}
 .weatherInfo{
 	float:left;
-	font-size: 100%;
-	padding:5px;
+	font-size:90%;
+	padding:2px;
 }
 .weatherForecast{
 	font-size: 80%;
