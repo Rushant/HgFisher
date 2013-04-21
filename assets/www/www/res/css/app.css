@@ -282,11 +282,11 @@
 }
 .adWords{
 	text-align:right;
-	font-family:"楷体",'宋体',Arial;
+	font-family:"楷体",'微软雅黑','宋体',Arial;
 	font-size:110%;
 	font-weight:bold;
-	text-shadow:0 0 0.2em #91b2dd,
-					0 0 0.2em #91b2dd;
+	text-shadow:0 0 0.2em #FFFFFF,
+					0 0 0.2em #FFFFFF;
 }
 .weatherInfo{
 	float:left;
@@ -322,6 +322,16 @@
 	/*background-image:url(../img/bg.jpg);FFF68F*/
 	/*background-image:url(../img/bg.jpg);*/
 	 background-color: #FFFFFF;
+	 /*使图片变黑白效果
+	 -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    
+    filter: grayscale(100%);
+	
+    filter: gray;
+    */
 }
 
 /*广告图片样式*/
