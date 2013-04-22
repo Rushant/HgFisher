@@ -154,7 +154,7 @@ Ext.define('tuanFeng.controller.forum9Controller',{
 		var systemId = Math.round(new Date().getTime()/1000);
 		var formpanel = this.getRef_travelsForm();
 			//系统自动分配编号，但手机号要用户输入
-		if(formpanel.getValues().photoTitle==0)
+		if(formpanel.getValues().travelsTitle == '')
 		{
 			Ext.Msg.alert("提示","请输入标题", Ext.emptyFn);
 			return;
@@ -164,7 +164,7 @@ Ext.define('tuanFeng.controller.forum9Controller',{
 			Ext.Msg.confirm('提示','确定要发布吗？',
 		      function(btn)
 		      	{
-			        if(btn=='yes')
+			        if(btn == 'yes')
 			        {											      
 						formpanel.setValues({travelsId:systemId });
 						//alert("此条信息的编号为："+formpanel.getValues().publishId+" （建议保存）");

@@ -32,7 +32,7 @@ Ext.define('tuanFeng.view.homeView', {
             	  xtype:'container',
             	  layout:'fit',
             	  width: screenWidth,
-            	  height:adImgHeight,
+            	  height: adImgHeight,
             	  items:[{           	
               		xtype:'w_adCarousel', 
             		cls:'adCls',

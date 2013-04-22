@@ -219,13 +219,13 @@ Ext.define('tuanFeng.controller.forum4Controller',{
 			var questionId = Math.round(new Date().getTime()/1000);
 			var formpanel = this.getRef_questionForm();
 				//系统自动分配编号，但手机号要用户输入
-				if(formpanel.getValues().qaContent==0)
+				if(formpanel.getValues().qaContent == 0)
 				{
 					Ext.Msg.alert("提示","请输入问题描述", Ext.emptyFn);
 					return;
 					//Ext.Msg.alert('提示','请输入',Ext.emptyFn);
 				}
-				else if(formpanel.getValues().qaTelephone==0)
+				else if(formpanel.getValues().qaTelephone == null)
 				{
 					//alert("请输入内容");
 					Ext.Msg.alert("提示","请输入联系电话", Ext.emptyFn);
@@ -259,7 +259,7 @@ Ext.define('tuanFeng.controller.forum4Controller',{
 			var formpanel = this.getRef_answerForm();
 			var systemId = Math.round(new Date().getTime()/1000);
 			//系统自动分配编号，但手机号要用户输入
-			if(formpanel.getValues().answerContent==0)
+			if(formpanel.getValues().answerContent == '')
 			{
 				//Ext.Msg.setZIndex(999);
 				Ext.Msg.defaultAllowedConfig.zIndex = 1000;
@@ -267,7 +267,7 @@ Ext.define('tuanFeng.controller.forum4Controller',{
 				return;
 				//Ext.Msg.alert('提示','请输入',Ext.emptyFn);
 			}
-			else if(formpanel.getValues().answerTelephone==0)
+			else if(formpanel.getValues().answerTelephone == null)
 			{
 				//alert("请输入内容");
 				Ext.Msg.defaultAllowedConfig.zIndex = 1000;
@@ -277,27 +277,20 @@ Ext.define('tuanFeng.controller.forum4Controller',{
 			else {
 				//make sure floating views display on the top;
 				Ext.Msg.defaultAllowedConfig.zIndex = 1000;
+				//alert(formpanel.getValues().answerContent);
 				Ext.Msg.confirm('提示','确定要发布吗？',
 
 			      function(btn)
-			      	{
+			      	{ 
 				        if(btn=='yes')
-				        {											      
+				        {					
 							formpanel.setValues({answerId:systemId,
 								questionId:me.questionId
 							});
-							formpanel.setUrl(Global.Website + '/Server/publishAnswer.jsp')
-					        formpanel.submit({
-					        	waitMsg : {message:'信息发布中...'},
-					        	success:function(){
-					        		Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
-					        		return;
-					        	},
-					        	failure:function(){
-					        		Ext.Msg.alert("提示", "发布失败！",Ext.emptyFn);
-					        		return;
-					        	}
-					        });
+							//formpanel.setUrl(Global.Website + '/Server/publishAnswer.jsp');
+					        formpanel.submit();
+					        me.getRef_answerForm().hide();
+					        Ext.Msg.alert("提示", "信息已上传，审核中...");					        
             			}
 				        else
 				        {

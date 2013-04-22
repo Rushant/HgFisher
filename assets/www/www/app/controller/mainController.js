@@ -69,10 +69,6 @@ Ext.define('tuanFeng.controller.mainController',{
 		    callback: function(records, operation, success) {
 		    	if(records.length!=0)
 		    	{				    	
-		    		//me.getRef_adImg1().setSrc(records[0].get('imageurl'));
-		    		//me.getRef_adImg2().setSrc(records[1].get('imageurl'));
-		    		//me.getRef_adImg3().setSrc(records[2].get('imageurl'));
-		    		//me.getRef_adCarousel().removeAll(true);
 		    		var adNum = 0;
 		    		for (var key in records) {
 		    			adNum++;//计算广告的数量
@@ -102,10 +98,10 @@ Ext.define('tuanFeng.controller.mainController',{
 						width: screenWidth,
 	            		height:adImgHeight,
 				        styleHtmlContent: true,
+				        html:'<span class="weatherInfo">获取天气失败！</span>'
+	    	    			 +'<span class="adWords">打造百亿水产，智慧水产'
+	      	        		+'<div>实现种苗名市，水产强市</div></span>' ,
 					}));
-		    	//	me.getRef_adImg1().setSrc('res/img/ad1.jpg');
-		    	//	me.getRef_adImg2().setSrc('res/img/ad2.jpg');
-		    	//	me.getRef_adImg3().setSrc('res/img/ad3.jpg');
 		    	}
 		    }
 		});
@@ -140,9 +136,6 @@ Ext.define('tuanFeng.controller.mainController',{
     	        me.getRef_adImg().setHtml(Global.weather1Short);
     	    },
     	    failure:function(){
-    	    	me.getRef_adImg().setHtml('<span class="weatherInfo">获取天气失败！</span>'
-    	    			 +'<span class="adWords"><div>打造百亿水产，智慧水产</div>'
-     	        		+'<div>实现种苗名市，水产强市</div></span>' );
     	    }
     	});
     },

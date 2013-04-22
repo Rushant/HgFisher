@@ -2,6 +2,7 @@ var Global = {
 	Author:'Rushant',
 	//Website : 'http://59.69.65.153:8080/HgFisherServer',
 	//http://zhny.0713.me:8080/WiseAgServer
+	//Website : 'http://59.69.65.180:8080/HgFisherServer',
 	Website : 'http://zhny.0713.me:8080/HgFisherServer',
 	//AdImgUrl:'http://59.69.65.153:8080/HgFisherServer/upload/adImg',
 	loadingText:'加载中...',

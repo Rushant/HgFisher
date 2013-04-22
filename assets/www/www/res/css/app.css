@@ -291,7 +291,6 @@
 .weatherInfo{
 	float:left;
 	font-size:90%;
-	padding:2px;
 }
 .weatherForecast{
 	font-size: 80%;
@@ -339,9 +338,6 @@
 }
 
 .adImgCls{
-	/*border: 1px solid red;
-	max-width:320px;
-	max-height:192px;*/
 }
 /*专家列表样式*/
 .expertCls .x-list-item-body {

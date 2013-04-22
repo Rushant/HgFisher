@@ -285,19 +285,9 @@ function deletePic3(id)
  */
 function publish(publishForm, publishId) {
  	var formpanel = publishForm;
-        formpanel.setUrl(Global.Website + '/Server/publish.jsp')
-        formpanel.submit({
-        	waitMsg : {message:'信息发布中...'},
-        	success:function(){
-        		Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
-        		return;
-        	},
-        	failure:function(){
-        		Ext.Msg.alert("提示", "发布失败！",Ext.emptyFn);
-        		return;
-        	}
-        });
-    	
+        formpanel.setUrl(Global.Website + '/Server/publish.jsp');
+        formpanel.submit();
+        Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
     imageURI1 = document.getElementById('camera_image1').src;
     imageURI2 = document.getElementById('camera_image2').src;
     imageURI3 = document.getElementById('camera_image3').src;
@@ -319,18 +309,9 @@ function publish(publishForm, publishId) {
 
 function publishQA(publishForm, qaId) {
  	var formpanel = publishForm;
-        formpanel.setUrl(Global.Website + '/Server/publishQuestion.jsp')
-        formpanel.submit({
-        	waitMsg : {message:'信息发布中...'},
-        	success:function(){
-        		Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
-        		return;
-        	},
-        	failure:function(){
-        		Ext.Msg.alert("提示", "发布失败！",Ext.emptyFn);
-        		return;
-        	}
-        });
+        formpanel.setUrl(Global.Website + '/Server/publishQuestion.jsp');
+        formpanel.submit();
+        Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
     	
     imageURI4 = document.getElementById('camera_image4').src;
     imageURI5 = document.getElementById('camera_image5').src;
@@ -353,18 +334,9 @@ function publishQA(publishForm, qaId) {
 
 function publishTravels(publishForm, travelsId) {
  	var formpanel =  publishForm;
-        formpanel.setUrl(Global.Website + '/Server/travelsPublish.jsp')
-        formpanel.submit({
-        	waitMsg : {message:'信息发布中...'},
-        	success:function(){
-        		Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
-        		return;
-        	},
-        	failure:function(){
-        		Ext.Msg.alert("提示", "发布失败！",Ext.emptyFn);
-        		return;
-        	}
-        });
+        formpanel.setUrl(Global.Website + '/Server/travelsPublish.jsp');
+        formpanel.submit();
+        Ext.Msg.alert("提示", "信息已上传，审核中...",Ext.emptyFn);
     	
     imageURI7 = document.getElementById('camera_image7').src;
     imageURI8 = document.getElementById('camera_image8').src;

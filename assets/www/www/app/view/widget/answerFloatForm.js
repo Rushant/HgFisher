@@ -8,6 +8,7 @@ Ext.define('tuanFeng.view.widget.answerFloatForm',{
 		hidden:true,
 		cls:'publish',
 		padding:5,
+		url:Global.Website + '/Server/publishAnswer.jsp',
 		onItemDisclosure:true,
         hideOnMaskTap: true,
         showAnimation: {
@@ -49,7 +50,6 @@ Ext.define('tuanFeng.view.widget.answerFloatForm',{
 						xtype:'numberfield',
 						id:'answerTelephoneId',
 						name:'answerTelephone',
-						minHeight: 0,
 						height:35,
 						label:'联系电话',
 						placeHolder:'该项为必填项'
@@ -58,7 +58,6 @@ Ext.define('tuanFeng.view.widget.answerFloatForm',{
 		        	 xtype:'textfield',
 		        	 id:'answerPublisherTextField',
 		        	 name:'answerPublisher',
-		        	 minHeight: 0,
 		             height:35,
 		        	 label:'发&nbsp&nbsp布&nbsp&nbsp人',
 		        	 value:'匿名用户'

@@ -4,7 +4,7 @@ Ext.define('tuanFeng.store.forum4.forum4Store1', {
     
     config:{
     model: 'tuanFeng.model.questionModel',
-    pageSize:Global.newsPageSize,    
+    pageSize: Global.newsPageSize,    
     proxy: {
         type: 'jsonp',
         url : Global.Website + '/Server/getQuestionContent.jsp',

@@ -6,7 +6,7 @@
 	        	cls:'publish',
 	        	scrollable: {
 	    		    direction: 'vertical',
-	    		    directionLock: true
+	    		    directionLock: true,
 	    		},
 	        	items:[
 						{
@@ -56,7 +56,6 @@
 							xtype:'textfield',
 							id:'qaPublisherId',
 							name:'qaPublisher',
-							minHeight: 0,
 							height:35,
 							label:'发&nbsp&nbsp布&nbsp&nbsp人'
 						},
@@ -64,7 +63,6 @@
 							xtype:'numberfield',
 							id:'qaTelephoneId',
 							name:'qaTelephone',
-							minHeight: 0,
 							height:35,
 							label:'联系电话',
 							placeHolder:'该项为必填项'

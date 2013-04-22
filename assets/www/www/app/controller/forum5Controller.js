@@ -158,19 +158,19 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 		var systemId = Math.round(new Date().getTime()/1000);
 		var formpanel = this.getRef_tradeForm();
 			//系统自动分配编号，但手机号要用户输入
-			if(formpanel.getValues().title==0)
+			if(formpanel.getValues().title == 0)
 			{
 				Ext.Msg.alert("提示","请输入标题", Ext.emptyFn);
 				return;
 				//Ext.Msg.alert('提示','请输入',Ext.emptyFn);
 			}
-			else if(formpanel.getValues().content==0)
+			else if(formpanel.getValues().content == 0)
 			{
 				//alert("请输入内容");
 				Ext.Msg.alert("提示","请输入内容", Ext.emptyFn);
 				return;	 								
 			}
-			else if(formpanel.getValues().telephone==0)
+			else if(formpanel.getValues().telephone == null)
 			{
 				//alert("请输入联系电话");
 				Ext.Msg.alert("提示","请输入联系电话", Ext.emptyFn);
