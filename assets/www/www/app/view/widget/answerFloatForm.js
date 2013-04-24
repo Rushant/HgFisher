@@ -21,8 +21,8 @@ Ext.define('tuanFeng.view.widget.answerFloatForm',{
             duration: 250,
             easing: 'ease-out'
         },
-        width: Ext.os.deviceType == 'Phone' ? 260 : 400,
-        height: Ext.os.deviceType == 'Phone' ? 320 : 400,
+        width: Ext.os.deviceType == 'Phone' ? Ext.Viewport.getWindowWidth()*0.9 : 400,
+                height: Ext.os.deviceType == 'Phone' ? Ext.Viewport.getWindowHeight()*0.6 : 400,
         centered: true,
         scrollable:'vertical',
         items:[{

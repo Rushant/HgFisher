@@ -26,7 +26,10 @@ Ext.define('tuanFeng.view.forum2View',{
         			                        { itemId :2,text: '加工贮运'},
         			                        { itemId :3,text: '鱼病防治'}
         		                    ]}
-        	             ]}
+        	             ]},
+        	             {
+        	            	xtype:'w_diseasePicker' 
+        	             }
         		]},
         		 {
 	        		itemId:'1',

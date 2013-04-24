@@ -44,12 +44,12 @@
 	max-height: 60px;
 	margin-left: 84px;
 }
-.listCls .listTitleCls{	
+.listTitleCls{	
 	font-size: 18px;
 	max-height: 60px;
     overflow: hidden;  
 }
-.listCls .listAuthorCls{
+.listAuthorCls{
 	margin-top:5px;
 	margin-left:0px;
 	font-size:15px;
@@ -59,22 +59,33 @@
 	 float:right;	
 }
 /*定义list点击后信息样式*/
-.listPressedCls  .x-list-paging-msg{
-	height: 70px;
-	padding: 5px 3px;
+.listPressedCls {
+	 /*使图片变黑白效果*/
+	 -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);   
+    filter: grayscale(100%);	
+    filter: gray;   
 }
-.listPressedCls .listTitleCls{	
-	color:#9D9D9D;
-	font-size: 18px;
-	max-height: 60px;
-    overflow: hidden;  
+/*渔病列表图标*/
+.diseaseIconCls {
+	margin-left:5px;
+	background-color: #66CC66;
 }
-.listPressedCls .listAuthorCls{
-	margin-top:5px;
-	margin-left:0px;
-	font-size:15px;
-    color:#9D9D9D;
+.disease1Cls {
+	color: #66CC66;
 }
+.disease2Cls {
+	background-color: #E37171;
+}
+.disease3Cls {
+	background-color: #E3CC71;
+}
+.disease4Cls {
+	background-color: #7666CC;
+}
+
 /*无图片列表的样式设计*/
 .noImgListCls .x-list-item-body  {
 	height:60px;
@@ -283,10 +294,10 @@
 .adWords{
 	text-align:right;
 	font-family:"楷体",'微软雅黑','宋体',Arial;
-	font-size:110%;
+	font-size:130%;
 	font-weight:bold;
-	text-shadow:0 0 0.2em #FFFFFF,
-					0 0 0.2em #FFFFFF;
+	text-shadow:0 0 0.2em #FFB100,
+					0 0 0.2em #FFB100;
 }
 .weatherInfo{
 	float:left;

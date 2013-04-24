@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.whut.HgFisher"
     android:versionCode="1"
-    android:versionName="v2.1.0" >
+    android:versionName="v2.1.1" >
 <supports-screens
 android:largeScreens="true"
 android:normalScreens="true"

@@ -18,14 +18,13 @@ Ext.define('tuanFeng.view.forum3View',{
         		            ui:'gray',			            
         		            items:[{
         		                    xtype: 'segmentedbutton',
-        		                    cls:'segbtn1Cls',
+        		                    cls:'segbtnCls',
         		                    allowDepress:false,
         				            defaults: { flex: 1 },
         		                    items: [//itemId不能为0
         		                            { itemId :1, text: '政策法规',pressed: true},
         			                        { itemId :2,text: '质量安全'},
-        			                        { itemId :3,text: '规范标准'},
-        			                        { itemId :4,text: '渔业经济'}
+        			                        { itemId :3,text: '渔业经济'}
         		                    ]}
         	             ]}
         		]},
@@ -43,11 +42,6 @@ Ext.define('tuanFeng.view.forum3View',{
 					itemId:'3',
 					xtype:'w_noImgList',
 					store:'forum3Store3'			
-				},
-				{
-					itemId:'4',
-					xtype:'w_noImgList',
-					store:'forum3Store4'			
 				}]
 	},
 	

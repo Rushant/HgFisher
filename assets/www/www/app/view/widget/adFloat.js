@@ -19,8 +19,8 @@ Ext.define('tuanFeng.view.widget.adFloat',{
             duration: 250,
             easing: 'ease-out'
         },
-        width: Ext.os.deviceType == 'Phone' ? 280 : 400,
-        height: Ext.os.deviceType == 'Phone' ? 320 : 400,
+        width: Ext.os.deviceType == 'Phone' ? Ext.Viewport.getWindowWidth()*0.9 : 400,
+        height: Ext.os.deviceType == 'Phone' ? Ext.Viewport.getWindowHeight()*0.6 : 400,
         centered: true,
         scrollable:'both',
         //zIndex:1000,

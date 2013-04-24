@@ -98,9 +98,8 @@ Ext.define('tuanFeng.controller.mainController',{
 						width: screenWidth,
 	            		height:adImgHeight,
 				        styleHtmlContent: true,
-				        html:'<span class="weatherInfo">获取天气失败！</span>'
-	    	    			 +'<span class="adWords">打造百亿水产，智慧水产'
-	      	        		+'<div>实现种苗名市，水产强市</div></span>' ,
+				        html:'<div class="adWords">打造百亿水产，智慧水产'
+	      	        		+'<div>实现种苗名市，水产强市</div></div>' ,
 					}));
 		    	}
 		    }

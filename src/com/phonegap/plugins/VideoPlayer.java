@@ -48,12 +48,12 @@ public class VideoPlayer extends Plugin {
             // If we don't do it this way you don't have the option for youtube
             uri = Uri.parse("vnd.youtube:" + uri.getQueryParameter("v"));
             intent = new Intent(Intent.ACTION_VIEW, uri);
-        } 
-        else {        
+        } else {        
             // Display video player
             intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(uri);
-        }       
+            intent.setDataAndType(uri, "video/*");
+        }
+        
         this.ctx.startActivity(intent);
     }
 }
