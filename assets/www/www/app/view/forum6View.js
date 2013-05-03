@@ -52,7 +52,7 @@ Ext.define('tuanFeng.view.forum6View',{
 	
 
 	initialize: function(){
-		this.activeItemTitle = "水产名人";
+		this.activeItemTitle = "水产人物";
 	},
 	
 	setActiveItemTitle: function(title){

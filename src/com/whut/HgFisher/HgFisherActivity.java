@@ -43,8 +43,6 @@ public class HgFisherActivity extends DroidGap {
 	private final int SDCARD_NOMOUNTED = 3;
 	private final int DOWN_ERROR = 4;
 	private boolean firstCheckUpdate = true;
-   // private String imsi;
-  //private String serverurl="http://zhny.0713.me:8080";
 	private UpdataInfo info;
 	private String localVersion;
 	@Override
@@ -61,13 +59,6 @@ public class HgFisherActivity extends DroidGap {
 			 {  
 			        super.setIntegerProperty("splashscreen", R.drawable.splash);			        
 			        super.loadUrl("file:///android_asset/www/www/index.html");	
-			        try{
-			   //     	GetPostUtil.sendPost(serverurl+"/WiseAgServer/Server/recordUser.jsp","appid=7&imsi="+imsi);
-			        	//System.out.println(response);
-			        }
-			        catch(Exception e){
-			        	e.printStackTrace();
-			        }
 			        update();			        			      
 			 }
 			 else

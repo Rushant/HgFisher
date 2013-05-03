@@ -225,6 +225,13 @@ Ext.define('tuanFeng.controller.mainController',{
 		me.getRef_fontSettingBar().hide();
 		
 		var infoId = record.get('id');
+		//记录访问量
+		Ext.Ajax.request({
+    		url : Global.Website + "/Server/recordTapNum.jsp",
+    		params : {
+    		"infoId" : infoId
+    		},
+    		});
 		var infoContent='',videoName='',yStartPos=0,yMovePos=0;
 		 Ext.data.JsonP.request({
 			 	url: Global.Website + '/Server/getInfoDetail.jsp',

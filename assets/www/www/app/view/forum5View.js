@@ -27,7 +27,10 @@ Ext.define('tuanFeng.view.forum5View',{
         			                        { itemId :3,text: '求购信息'},
         			                        { itemId :4,text: '我要发布'}
         		                    ]}
-        	             ]}
+        	             ]},
+        	             {
+         	            	xtype:'w_areaPicker',
+         	             }
         		]},
         		{
 	        		itemId:'1',

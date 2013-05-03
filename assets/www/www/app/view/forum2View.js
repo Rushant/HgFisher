@@ -28,7 +28,8 @@ Ext.define('tuanFeng.view.forum2View',{
         		                    ]}
         	             ]},
         	             {
-        	            	xtype:'w_diseasePicker' 
+        	            	xtype:'w_diseasePicker',
+        	            	hidden: true,
         	             }
         		]},
         		 {

@@ -11,7 +11,11 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 			ref_resetBtn:'#resetBtn',
 			ref_submitBtn:'#submitBtn',
 			ref_tradeForm:'w_tradeForm',
-			ref_publishList:'w_publishList'
+			ref_publishList:'w_publishList',
+			ref_areaBtn: 'w_areaPicker button',
+			ref_w_areaPicker: 'v_forum5 w_areaPicker',
+			ref_arrowBtn: 'v_forum5 #arrowBtn',
+			ref_areaMore: 'v_forum5 #areaMore',
 		},
 		control:{
 			ref_forum5Icon:{
@@ -37,6 +41,12 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 			},
 			ref_publishList:{
 				itemtap:'getDetail'
+			},
+			ref_areaBtn: {
+				tap: 'getList'
+			},
+			ref_arrowBtn: {
+				tap: 'showMore'
 			}
 		}
 	},
@@ -49,6 +59,39 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 			this.forum5View.getActiveItem().getStore().loadPage(1);
 		//this.getRef_detailView().setFatherView(this.forum5View);
 		Ext.Viewport.setActiveItem(this.forum5View);
+	},
+	
+	getList: function(btn){
+		var key = btn.getText();
+		console.log(key);
+		if(key != null){
+			var url = Global.Website + '/Server/getPickedInfoTitle.jsp?categoryid=521&key= ' + key;
+			url = encodeURI(url);
+			url = encodeURI(url);
+			//处理js传中文至jsp产生的乱码
+			this.forum5View.getActiveItem().getStore().setProxy({
+				type: 'jsonp',
+		        url : url,
+		        reader: {
+		            type: 'json',
+		            successProperty: 'success'
+		        } 
+			});
+			this.forum5View.getActiveItem().getStore().loadPage(1);
+		}		
+	},
+	
+	showMore: function(){
+		//console.log('dd');
+		if(this.getRef_areaMore().getHidden() == true){
+			this.getRef_areaMore().show();
+			this.getRef_arrowBtn().setIconCls('arrow_up');
+		}
+		else{
+			this.getRef_areaMore().hide();
+			this.getRef_arrowBtn().setIconCls('arrow_down');
+		}
+			
 	},
 	
 	getDetail:function(dataview, index, target, record, e, options){
@@ -126,6 +169,10 @@ Ext.define('tuanFeng.controller.forum5Controller',{
 	},
 	
 	getPickedCaro5:function(container, newItem, oldItem,opts){
+		if(newItem.getItemId() == 1)
+			this.getRef_w_areaPicker().show();
+		else
+			this.getRef_w_areaPicker().hide();
 		this.getRef_forum5Segmentbutton().setPressedButtons(newItem.getItemId());
 		if(newItem.getItemId() != 4 && !newItem.getStore().isLoaded())
 			newItem.getStore().loadPage(1);

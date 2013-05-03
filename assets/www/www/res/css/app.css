@@ -86,6 +86,8 @@
 	background-color: #7666CC;
 }
 
+.btnPressed {
+}
 /*无图片列表的样式设计*/
 .noImgListCls .x-list-item-body  {
 	height:60px;
