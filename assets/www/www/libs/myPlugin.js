@@ -61,6 +61,10 @@ function play(){//点击图标后播放视频
 	//alert(videoName);
 	window.plugins.videoPlayer.play(videoName);  
 }
+function playRTSP(){//点击图标后播放视频
+	//alert(videoName);
+	window.plugins.RtspPlayer.play(videoName);  
+}
 function setVideoName(videoNamePara){
 	videoName = videoNamePara;
 }//设置播放的视频

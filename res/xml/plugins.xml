@@ -17,5 +17,6 @@
     <plugin name="FileTransfer" value="com.phonegap.FileTransfer"/>
     <plugin name="Capture" value="com.phonegap.Capture"/>
     <plugin name="VideoPlayer" value="com.phonegap.plugins.VideoPlayer"/>
+    <plugin name="RtspPlayer" value="com.phonegap.plugins.RtspPlayer"/>
     <plugin name="IMSI" value="com.phonegap.plugins.IMSI"/>  
 </plugins> 

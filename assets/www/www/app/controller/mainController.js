@@ -249,7 +249,7 @@ Ext.define('tuanFeng.controller.mainController',{
 	        			me.detailView.setHtml('<div class="detailTitleCls">'
 	        	    			+ record.get('title') +'</div>'+ 
 	        	    			'<div class="detailDateCls">'+ record.get('datetime')+'&nbsp;&nbsp;来源:'+record.get('publisher')+'</div>'
-	        	    			+'<center><input class="detailVideoCls"  type="button" onclick="play();" /></center>' 
+	        	    			+'<center><input class="detailVideoCls"  type="button" onclick="playRTSP();" /></center>' 
 	        	    	    	+'<div class="detailContentCls">'+infoContent.content+'</div>'
 	        	    	    	+'<br><br>');
 	        		else
